@@ -53,6 +53,34 @@ class _MyHomePageState extends State<MyHomePage> {
                 print('Share Button Clicked');
               },
             ),
+            const SizedBox(height: 10,),
+            RoundedButton(
+              buttonName: 'Person',
+              backgroundColor: Colors.pink,
+              //icon: const Icon(Icons.share_outlined, color: Colors.white,),
+              textStyle: const TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 22,
+                color: Colors.white,
+              ),
+              voidCallback: () {
+                print('Person Button Clicked');
+              },
+            ),
+            const SizedBox(height: 10,),
+            RoundedButton(
+              buttonName: 'Alarm',
+              backgroundColor: Colors.green,
+              icon: const Icon(Icons.alarm_add_outlined, color: Colors.white,),
+              textStyle: const TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 22,
+                color: Colors.white,
+              ),
+              voidCallback: () {
+                print('Alarm Button Clicked');
+              },
+            ),
           ],
         ),
       ),
